@@ -208,12 +208,21 @@ const Navbar = () => {
             className="flex items-center gap-2 sm:gap-3 md:gap-4 shrink min-w-0"
           >
             {/* Logo */}
-            <img
-              src={vpmLogo}
-              alt="VPM Logo"
-              className="object-contain shrink-0 transition-all duration-300"
-              style={{ width: logoW, height: logoH }}
-            />
+<img
+  src={vpmLogo}
+  alt="VPM Logo"
+  className="object-contain shrink-0 transition-all duration-300"
+  style={{
+    width: logoW,
+    height: logoH,
+    filter: `
+      drop-shadow(0 0 6px rgba(242,162,10,0.9))
+      drop-shadow(0 0 14px rgba(242,162,10,0.7))
+      drop-shadow(0 0 28px rgba(242,162,10,0.5))
+      drop-shadow(0 0 45px rgba(255,200,50,0.35))
+    `
+  }}
+/>
 
             {/* ── College name: Mobile + Tablet (< md) ── */}
             <div className="  flex flex-col leading-tight md:hidden  overflow-hidden">
